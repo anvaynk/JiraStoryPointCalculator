@@ -13,7 +13,6 @@ const callback = function(mutationsList, observer) {
     const header = headers[index].querySelector('.ghx-column-header-flex');
     header.style["justify-content"] = "space-between";
     let node = header.getElementsByClassName('sp-total')[0];
-    debugger;
     if(node){
       const h2 = node.getElementsByTagName('h2')[0];
       h2.innerHTML = total;
