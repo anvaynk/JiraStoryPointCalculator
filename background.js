@@ -3,6 +3,6 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function({ tabId }) {
 }, {
   url: [
     { 
-      urlMatches: 'https://wazirx.atlassian.net/*'
+      urlMatches: 'https://*.atlassian.net/*'
     }]
 });
