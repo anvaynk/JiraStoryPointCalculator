@@ -18,7 +18,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://wazirx.atlassian.net/*"],
+      "matches": ["https://*.atlassian.net/*"],
       "js": ["content.js"],
       "css": ["content.css"]
     }
