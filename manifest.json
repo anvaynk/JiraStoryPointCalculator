@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Jira Story Point Calculator",
+  "version": "1.0.0",
+  "description": "An extension to calculate story points in each lane.",
+  "short_name": "Jira Story Point Calculator",
+  "permissions": ["declarativeContent", "tabs", "webNavigation", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "logo.ico",
+    "icons": {
+       "16": "logo.ico",
+       "48": "logo.ico",
+      "128": "logo.ico"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://wazirx.atlassian.net/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+ }
